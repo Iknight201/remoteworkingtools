@@ -3,8 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Remote Working Tools | Boost Your Productivity</title>
-  <meta name="description" content="Discover the best remote working tools to boost your productivity. Reviews, recommendations, and resources for remote workers.">
+  <title>Remote Working Tools | Best Tools for Remote Professionals</title>
+  <meta name="description" content="Discover the best remote working tools to boost your productivity. Reviews, recommendations, and affiliate links for remote workers. Work smarter from anywhere.">
+  <meta name="keywords" content="remote work tools, remote working, productivity tools, work from home, remote collaboration, best remote software">
+  <meta name="author" content="Remote Working Tools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://remoteworkingtools.net/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Remote Working Tools | Boost Your Productivity">
+  <meta property="og:description" content="Curated tools, tips, and resources for remote professionals. Boost your productivity and love your workflow.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remoteworkingtools.net/">
+  <meta property="og:image" content="https://remoteworkingtools.net/images/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Remote Working Tools | Best Tools for Remote Professionals">
+  <meta name="twitter:description" content="Discover the best remote working tools to boost your productivity.">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Remote Working Tools",
+    "url": "https://remoteworkingtools.net/",
+    "description": "Curated tools and resources for remote professionals",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://remoteworkingtools.net/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -13,134 +46,345 @@
       color: #333;
       background: #f8f9fa;
     }
+    a { text-decoration: none; color: inherit; }
+    
     header {
-      background: #1a1a2e;
+      background: #0f172a;
       color: white;
       padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    header h1 { font-size: 1.5rem; }
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; }
+    nav a {
+      margin-left: 1.5rem;
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+    nav a:hover { opacity: 1; }
+    
     .hero {
       text-align: center;
-      padding: 4rem 2rem;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
       color: white;
     }
-    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem;
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem; }
+    .hero .cta-buttons { display: flex; gap: 1rem; justify-content: center; }
+    .btn {
+      padding: 0.875rem 1.75rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
+    .btn-primary {
+      background: #22c55e;
+      color: white;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .section-title h2 { font-size: 2.25rem; color: #0f172a; }
+    .section-title p { color: #64748b; margin-top: 0.5rem; }
+    
     .tools-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1.5rem;
-      margin-top: 2rem;
     }
     .tool-card {
       background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: transform 0.25s, box-shadow 0.25s;
+      border: 1px solid #e2e8f0;
     }
-    .tool-card:hover { transform: translateY(-4px); }
-    .tool-card h3 { color: #1a1a2e; margin-bottom: 0.5rem; }
+    .tool-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    .tool-card .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    .tool-card h3 { color: #0f172a; font-size: 1.35rem; }
     .tool-card .category {
-      display: inline-block;
-      background: #e8f4fd;
-      color: #0077cc;
+      background: #dbeafe;
+      color: #1d4ed8;
       padding: 0.25rem 0.75rem;
       border-radius: 20px;
-      font-size: 0.8rem;
-      margin-bottom: 0.75rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
     }
-    .tool-card p { color: #666; font-size: 0.95rem; }
-    .tool-card .price { font-weight: bold; color: #2ecc71; margin-top: 0.5rem; }
-    .cta {
+    .tool-card p { color: #64748b; }
+    .tool-card .price {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #22c55e;
+      margin-top: 1rem;
+    }
+    .tool-card .affiliate-tag {
+      font-size: 0.75rem;
+      color: #f59e0b;
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+    .tool-card .cta {
       display: inline-block;
-      background: #0077cc;
+      background: #0f172a;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 8px;
-      text-decoration: none;
       margin-top: 1rem;
+      font-weight: 600;
+      transition: background 0.2s;
     }
+    .tool-card .cta:hover { background: #334155; }
+    
+    .features {
+      background: white;
+      padding: 4rem 2rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .feature {
+      text-align: center;
+    }
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: #dbeafe;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.75rem;
+    }
+    .feature h3 { margin-bottom: 0.5rem; color: #0f172a; }
+    .feature p { color: #64748b; }
+    
+    .newsletter {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .newsletter h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .newsletter p { opacity: 0.85; max-width: 500px; margin: 0 auto 1.5rem; }
+    .newsletter-form {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      max-width: 450px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .newsletter-form input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.875rem 1.25rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .newsletter-form button {
+      padding: 0.875rem 1.75rem;
+      background: #22c55e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .newsletter-form button:hover { background: #16a34a; }
+    
+    .disclosure {
+      background: #fef3c7;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #92400e;
+    }
+    .disclosure a { text-decoration: underline; }
+    
     footer {
       text-align: center;
       padding: 2rem;
-      background: #1a1a2e;
+      background: #0f172a;
       color: white;
-      margin-top: 3rem;
     }
+    footer a { opacity: 0.7; }
+    footer a:hover { opacity: 1; }
   </style>
 </head>
 <body>
+  <div class="disclosure">
+    ⚠️ <strong>Affiliate Disclosure:</strong> We earn commissions on products purchased through links on this site. <a href="/disclosure.html">Full disclosure</a>
+  </div>
+  
   <header>
-    <h1>Remote Working Tools</h1>
+    <div class="header-content">
+      <a href="/" class="logo">📡 Remote Working Tools</a>
+      <nav>
+        <a href="/tools.html">Tools</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
   </header>
   
   <section class="hero">
-    <h2>Work Smarter, From Anywhere</h2>
-    <p>Curated tools, tips, and resources for remote professionals. Boost your productivity and love your workflow.</p>
+    <h1>Work Smarter, From Anywhere</h1>
+    <p>Curated tools, tips, and resources for remote professionals. We test and recommend the best software to boost your productivity.</p>
+    <div class="cta-buttons">
+      <a href="/tools.html" class="btn btn-primary">Browse Tools →</a>
+      <a href="/blog.html" class="btn btn-secondary">Read Our Blog</a>
+    </div>
+  </section>
+  
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">🔍</div>
+        <h3>Researched Reviews</h3>
+        <p>We test every tool ourselves and give honest, unbiased reviews.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💰</div>
+        <h3>Affiliate Links</h3>
+        <p>Support us by purchasing through our links — at no extra cost to you.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <h3>Regular Updates</h3>
+        <p>We keep our recommendations fresh as tools evolve.</p>
+      </div>
+    </div>
   </section>
   
   <div class="container">
-    <h3>Featured Tools</h3>
+    <div class="section-title">
+      <h2>🔥 Popular Tools This Month</h2>
+      <p>Top-rated remote working tools by our community</p>
+    </div>
+    
     <div class="tools-grid">
       <article class="tool-card">
-        <span class="category">Communication</span>
-        <h3>Slack</h3>
-        <p>Team communication platform with channels, DMs, and integrations for seamless collaboration.</p>
-        <div class="price">Free tier available</div>
-        <a href="#" class="cta">Learn More</a>
+        <div class="top-row">
+          <h3>Notion</h3>
+          <span class="category">Productivity</span>
+        </div>
+        <p>All-in-one workspace for notes, docs, databases, and project tracking. Perfect for remote teams.</p>
+        <div class="price">Free tier • <span class="affiliate-tag">⭐ Best Value</span></div>
+        <a href="https://notion.so" target="_blank" rel="nofollow" class="cta">Visit Site →</a>
       </article>
       
       <article class="tool-card">
-        <span class="category">Project Management</span>
-        <h3>Notion</h3>
-        <p>All-in-one workspace for notes, docs, databases, and project tracking.</p>
-        <div class="price">Free tier available</div>
-        <a href="#" class="cta">Learn More</a>
+        <div class="top-row">
+          <h3>Slack</h3>
+          <span class="category">Communication</span>
+        </div>
+        <p>Team communication platform with channels, DMs, and powerful integrations.</p>
+        <div class="price">Free tier</div>
+        <a href="https://slack.com" target="_blank" rel="nofollow" class="cta">Visit Site →</a>
       </article>
       
       <article class="tool-card">
-        <span class="category">Video Calls</span>
-        <h3>Zoom</h3>
-        <p>Reliable video conferencing for meetings, webinars, and remote team catchups.</p>
-        <div class="price">Free tier available</div>
-        <a href="#" class="cta">Learn More</a>
+        <div class="top-row">
+          <h3>Loom</h3>
+          <span class="category">Video</span>
+        </div>
+        <p>Quick video messages that replace endless meetings. Great for async communication.</p>
+        <div class="price">Free tier</div>
+        <a href="https://loom.com" target="_blank" rel="nofollow" class="cta">Visit Site →</a>
       </article>
       
       <article class="tool-card">
-        <span class="category">Time Tracking</span>
-        <h3>Toggl</h3>
-        <p>Simple time tracking to understand where your work hours go and boost accountability.</p>
-        <div class="price">Free tier available</div>
-        <a href="#" class="cta">Learn More</a>
+        <div class="top-row">
+          <h3>Toggl Track</h3>
+          <span class="category">Time Tracking</span>
+        </div>
+        <p>Simple time tracking to understand where your hours go. Essential for freelancers.</p>
+        <div class="price">Free tier</div>
+        <a href="https://toggl.com" target="_blank" rel="nofollow" class="cta">Visit Site →</a>
       </article>
       
       <article class="tool-card">
-        <span class="category">File Storage</span>
-        <h3>Google Drive</h3>
-        <p>Cloud storage with real-time collaboration on docs, sheets, and slides.</p>
-        <div class="price">15GB free</div>
-        <a href="#" class="cta">Learn More</a>
+        <div class="top-row">
+          <h3>1Password</h3>
+          <span class="category">Security</span>
+        </div>
+        <p>Secure password management with end-to-end encryption. Teams love it.</p>
+        <div class="price">Trial available</div>
+        <a href="https://1password.com" target="_blank" rel="nofollow" class="cta">Visit Site →</a>
       </article>
       
       <article class="tool-card">
-        <span class="category">Password Manager</span>
-        <h3>1Password</h3>
-        <p>Secure password management for teams and individuals with end-to-end encryption.</p>
-        <div class="price">14-day free trial</div>
-        <a href="#" class="cta">Learn More</a>
+        <div class="top-row">
+          <h3>Figma</h3>
+          <span class="category">Design</span>
+        </div>
+        <p>Collaborative design tool. Remote teams can work together in real-time.</p>
+        <div class="price">Free tier</div>
+        <a href="https://figma.com" target="_blank" rel="nofollow" class="cta">Visit Site →</a>
       </article>
     </div>
   </div>
   
+  <section class="newsletter">
+    <h2>📬 Get Weekly Remote Work Tips</h2>
+    <p>Join 2,000+ remote workers getting our curated tool picks and productivity tips every week.</p>
+    <form class="newsletter-form" action="/subscribe" method="post">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe Free</button>
+    </form>
+  </section>
+  
   <footer>
-    <p>&copy; 2026 Remote Working Tools. All rights reserved.</p>
+    <p>© 2026 Remote Working Tools. All rights reserved.</p>
+    <p style="margin-top: 0.5rem; opacity: 0.7;">
+      <a href="/privacy.html">Privacy</a> • 
+      <a href="/disclosure.html">Affiliate Disclosure</a> • 
+      <a href="/contact.html">Contact</a>
+    </p>
   </footer>
+<!-- Force refresh: 2026-04-21 -->
 </body>
 </html>
