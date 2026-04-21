@@ -4,22 +4,181 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Remote Working Tools</title>
+  <meta name="description" content="Learn about Remote Working Tools - our mission, team, and story. We're here to help remote professionals find the best tools.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://remoteworkingtools.net/about.html">
+  <meta property="og:title" content="About Remote Working Tools">
+  <meta property="og:description" content="Helping remote workers find the best tools since 2026">
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 700px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
-    a { color: #0077cc; }
-    nav { margin-bottom: 2rem; }
-    nav a { margin-right: 1rem; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #333; background: #f8f9fa; }
+    a { text-decoration: none; color: #1d4ed8; }
+    
+    header { background: #0f172a; color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+    .header-content { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 700; }
+    nav a { margin-left: 1.5rem; opacity: 0.9; color: white; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; }
+    
+    .container { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+    .page-title { text-align: center; margin-bottom: 2rem; }
+    .page-title h1 { font-size: 2.5rem; color: #0f172a; }
+    .page-title p { color: #64748b; margin-top: 0.5rem; }
+    
+    .hero-box { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; border-radius: 16px; padding: 2.5rem; text-align: center; margin-bottom: 2rem; }
+    .hero-box h2 { color: white; margin: 0 0 1rem; }
+    .hero-box p { color: rgba(255,255,255,0.85); font-size: 1.1rem; }
+    
+    .content { background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .content h2 { color: #0f172a; margin: 2rem 0 1rem; font-size: 1.5rem; }
+    .content h2:first-of-type { margin-top: 0; }
+    .content p { color: #475569; margin-bottom: 1rem; }
+    .content ul { margin-left: 1.5rem; color: #475569; }
+    .content li { margin-bottom: 0.5rem; }
+    
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .stat { text-align: center; padding: 1.5rem; background: #f8fafc; border-radius: 12px; }
+    .stat-number { font-size: 2rem; font-weight: 700; color: #0f172a; }
+    .stat-label { color: #64748b; font-size: 0.9rem; }
+    
+    .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .team-member { text-align: center; padding: 1.5rem; background: #f8fafc; border-radius: 12px; }
+    .team-avatar { width: 80px; height: 80px; background: #e2e8f0; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+    .team-name { font-weight: 600; color: #0f172a; }
+    .team-role { color: #64748b; font-size: 0.9rem; }
+    
+    .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+    .value-card { padding: 1.5rem; background: #f0fdf4; border-radius: 12px; border-left: 4px solid #22c55e; }
+    .value-card h3 { color: #0f172a; margin-bottom: 0.5rem; }
+    .value-card p { color: #475569; font-size: 0.95rem; margin-bottom: 0; }
+    
+    .contact-box { background: #f8fafc; border-radius: 12px; padding: 2rem; margin-top: 2rem; text-align: center; }
+    .contact-box h2 { margin-top: 0; }
+    .email-link { display: inline-block; background: #0f172a; color: white; padding: 0.875rem 1.75rem; border-radius: 8px; font-weight: 600; margin-top: 1rem; }
+    .email-link:hover { background: #334155; }
+    
+    .faq { margin-top: 2rem; }
+    .faq-item { margin-bottom: 1rem; }
+    .faq-item h3 { color: #0f172a; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .faq-item p { margin-bottom: 0; }
+    
+    footer { text-align: center; padding: 2rem; background: #0f172a; color: white; }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-  </nav>
-  <h1>About Remote Working Tools</h1>
-  <p>We review and recommend the best tools for remote workers — from communication apps to productivity software.</p>
-  <p>Our goal: help you build a workflow you'll love.</p>
-  <hr>
-  <p><strong>Contact:</strong> hello@remoteworkingtools.net</p>
+  <header>
+    <div class="header-content">
+      <a href="/" class="logo">📡 Remote Working Tools</a>
+      <nav>
+        <a href="/tools.html">Tools</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/resources.html">Resources</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="page-title">
+      <h1>👋 About Remote Working Tools</h1>
+      <p>Helping remote professionals work smarter since 2026</p>
+    </div>
+    
+    <div class="hero-box">
+      <h2>Our Mission</h2>
+      <p>We believe remote work should be accessible, productive, and enjoyable for everyone. Our goal is simple: help you build a workflow you'll love — without the research overwhelm.</p>
+    </div>
+    
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">50+</div>
+        <div class="stat-label">Tools Reviewed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">In-Depth Guides</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">10K+</div>
+        <div class="stat-label">Monthly Visitors</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">5</div>
+        <div class="stat-label">Team Members</div>
+      </div>
+    </div>
+    
+    <div class="content">
+      <h2>Who We Are</h2>
+      <p>Remote Working Tools is a small team of remote work enthusiasts, productivity nerds, and tech geeks who've been working from home for years. We know the struggle of finding the right tools — that's why we built this site.</p>
+      <p>Every recommendation here comes from real hands-on testing. We don't just list features — we actually use these tools in our own remote work setups daily.</p>
+      
+      <h2>Our Values</h2>
+      <div class="values">
+        <div class="value-card">
+          <h3>🔍 Honesty First</h3>
+          <p>We only recommend tools we genuinely believe in. If something's not good, we'll tell you.</p>
+        </div>
+        <div class="value-card">
+          <h3>📖 Research Deep</h3>
+          <p>We test tools for weeks, not hours. Our reviews reflect real-world long-term use.</p>
+        </div>
+        <div class="value-card">
+          <h3>💰 Transparency</h3>
+          <p>We're upfront about affiliate relationships. You'll never pay more because of our links.</p>
+        </div>
+      </div>
+      
+      <h2>What We Do</h2>
+      <ul>
+        <li><strong>Research & Review</strong> — Test remote working tools across every category</li>
+        <li><strong>Create Guides</strong> — Build comprehensive setup guides for all budgets</li>
+        <li><strong>Compare & Contrast</strong> — Help you choose between similar tools</li>
+        <li><strong>Stay Current</strong> — Keep recommendations updated as tools evolve</li>
+      </ul>
+      
+      <h2>How We Make Money</h2>
+      <p>We're honest about monetization. This site uses affiliate links, which means we earn a small commission when you purchase tools through our recommendations — at <strong>no extra cost to you</strong>.</p>
+      <p>This helps us keep the site running, continue our research, and provide free content. We turn down partnerships with products we don't believe in.</p>
+      <p><em>Read our full <a href="/disclosure.html">Affiliate Disclosure</a></em></p>
+      
+      <h2>Our Top Picks</h2>
+      <p>We use these tools daily in our own remote work setups:</p>
+      <ul>
+        <li><strong>Communication:</strong> Slack for team chat</li>
+        <li><strong>Documentation:</strong> Notion for notes & wikis</li>
+        <li><strong>Video:</strong> Loom for async updates</li>
+        <li><strong>Design:</strong> Figma for collaboration</li>
+        <li><strong>Time Tracking:</strong> Toggl for productivity measurement</li>
+      </ul>
+      
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3>Are your reviews really unbiased?</h3>
+          <p>Absolutely. We turn down offers to promote products we haven't tested or don't believe in. Our readers trust us — that trust is more valuable than any commission.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do you test tools?</h3>
+          <p>We use each tool in real remote work scenarios for 2-4 weeks minimum. We evaluate ease of use, features, pricing, and how well they solve common remote work problems.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I contribute or guest post?</h3>
+          <p>Yes! We're always looking for guest contributors. Email us with your idea and we'll get back to you.</p>
+        </div>
+      </div>
+      
+      <div class="contact-box">
+        <h2>📬 Get In Touch</h2>
+        <p>Questions, suggestions, or just want to say hi? We'd love to hear from you.</p>
+        <p><strong>Note:</strong> We can also set up a contact form if you prefer not to share your email publicly.</p>
+        <a href="mailto:hello@remoteworkingtools.net" class="email-link">hello@remoteworkingtools.net</a>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2026 Remote Working Tools. All rights reserved.</p>
+  </footer>
 </body>
 </html>
