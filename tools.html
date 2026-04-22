@@ -47,6 +47,45 @@
     
     footer { text-align: center; padding: 2rem; background: #0f172a; color: white; }
   </style>
+  <script>
+    function filterTools(category) {
+      var cards = document.querySelectorAll('.tool-card');
+      var buttons = document.querySelectorAll('.filter-btn');
+      
+      // Update active button
+      buttons.forEach(function(btn) {
+        btn.classList.remove('active');
+        if (btn.textContent.trim() === category || (category === 'All' && btn.classList.contains('active'))) {
+          btn.classList.add('active');
+        }
+      });
+      
+      // Show/hide cards
+      cards.forEach(function(card) {
+        var cardCategory = card.querySelector('.category').textContent.trim();
+        if (category === 'All' || cardCategory === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+    
+    // Add click handlers
+    document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var category = this.textContent.trim();
+          filterTools(category);
+          
+          // Update active state
+          buttons.forEach(function(b) { b.classList.remove('active'); });
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
